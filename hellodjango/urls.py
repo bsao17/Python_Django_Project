@@ -21,5 +21,8 @@ from appTwo import views as appTwo_views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('hello/', views.hello),
-    path('djangorocks', appTwo_views.djangorocks)
+    path('djangorocks', appTwo_views.djangorocks),
+    path('picture/<str:category>', appTwo_views.picture_details),
+    path('picture/<str:category>/<int:year>/<int:month>', appTwo_views.picture_details),
+
 ]
