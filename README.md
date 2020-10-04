@@ -3,4 +3,4 @@ I use Python-Django for the first time, usually i use Python only with my Raspbe
 PHP is dead ..., or Not! :o
 
 but i think that is not a good idea to used PHP as the only and first backend language
-But as there are a lot, i prefer try Django at the moment, While learning php/mySQL !!! 
+But as there are a lot, i prefer try Django at the moment because i already use python for others, While learning php/mySQL !!! 
