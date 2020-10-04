@@ -7,5 +7,13 @@ def djangorocks(request):
 
 def picture_details(request, category, year=0, month=0, day=0):
     template = loader.get_template('appTwo/index.html')
-    return HttpResponse(template.render({}, request))
+    context = {
+        'title':'Here is the Pictures Details !',
+        'category': category,
+        'year': year,
+        'month': month,
+        'day': day
+
+    }
+    return HttpResponse(template.render(context, request))
 

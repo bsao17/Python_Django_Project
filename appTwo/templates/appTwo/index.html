@@ -5,13 +5,19 @@
     <title>appTwo</title>
 </head>
 <body style="margin:0px;">
-<h1 style="text-align:center;">Welcome on Django App2</h1>
+<h1 style="text-align:center;"> {{title}} </h1>
 
 <div style="background-color:grey; color:white; font-size:2rem;">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         Atque beatae culpa dignissimos dolores esse illum ipsa iure iusto
         laudantium neque nisi non odit officia praesentium quae quas quasi quo, vel.
     </p>
+    <ul>
+        <li>Category : {{category}}</li>
+        <li>Year : {{year}}</li>
+        <li>Month : {{month}}</li>
+        <li>Day : {{day}}</li>
+    </ul>
 </div>
 </body>
 </html>
