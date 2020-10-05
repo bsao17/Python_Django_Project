@@ -1,23 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>appTwo</title>
-</head>
-<body style="margin:0px;">
-<h1 style="text-align:center;"> {{title}} </h1>
+{% extends "appTwo/base.html" %}
 
-<div style="background-color:grey; color:white; font-size:2rem;">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Atque beatae culpa dignissimos dolores esse illum ipsa iure iusto
-        laudantium neque nisi non odit officia praesentium quae quas quasi quo, vel.
-    </p>
-    <ul>
-        <li>Category : {{category}}</li>
-        <li>Year : {{year}}</li>
-        <li>Month : {{month}}</li>
-        <li>Day : {{day}}</li>
-    </ul>
-</div>
-</body>
-</html>
+{% block content %}
+<section class="d-flex align-items-center bg-info p-2 m-1">
+    <div >
+        <h1>My Django Site</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, aliquam architecto,
+            aspernatur dolores excepturi expedita fugit hic id, inventore maiores nisi non numquam odio odit quas quis sapiente sint veniam?
+        </p>
+    </div>
+    <div>
+        <p class="bg-success">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus at cum cumque explicabo fuga illo labore laborum libero magni,
+            minus molestias numquam recusandae repellendus reprehenderit sint sit ullam, voluptatibus. Repellat?
+        </p>
+    </div>
+
+</section>
+{% endblock %}
+ {{block.super}}
